@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/Fraunces.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* MoodFood Warm Palette */
+    --background: 0.956 0.022 85; /* #F6F0E2 warm cream */
+    --foreground: 0.175 0.01 60; /* #1F1F1F near-black */
+    --card: 1 0 0; /* #FFFFFF white */
+    --card-foreground: 0.175 0.01 60;
+    --popover: 1 0 0;
+    --popover-foreground: 0.175 0.01 60;
+
+    /* Primary = deep moss green #2F5C43 */
+    --primary: 0.39 0.1 155;
+    --primary-foreground: 1 0 0;
+
+    /* Secondary = muted coral #C87462 */
+    --secondary: 0.64 0.12 35;
+    --secondary-foreground: 1 0 0;
+
+    /* Terracotta hero #B55A46 */
+    --terracotta: 0.54 0.13 35;
+    --terracotta-foreground: 1 0 0;
+
+    /* Mood active orange #C86B3C */
+    --mood-active-from: 0.62 0.15 45;
+    --mood-active-to: 0.55 0.14 40;
+
+    --muted: 0.93 0.015 80;
+    --muted-foreground: 0.5 0.025 65;
+
+    --accent: 0.93 0.015 80;
+    --accent-foreground: 0.39 0.1 155;
+
+    --destructive: 0.57 0.18 25;
+    --destructive-foreground: 1 0 0;
+
+    --border: 0.88 0.025 75;
+    --input: 0.88 0.025 75;
+    --ring: 0.39 0.1 155;
+    --radius: 0.75rem;
+
+    --chart-1: 0.62 0.15 45;
+    --chart-2: 0.39 0.1 155;
+    --chart-3: 0.54 0.13 35;
+    --chart-4: 0.64 0.12 35;
+    --chart-5: 0.7 0.08 90;
+
+    --sidebar: 0.956 0.022 85;
+    --sidebar-foreground: 0.175 0.01 60;
+    --sidebar-primary: 0.39 0.1 155;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.93 0.015 80;
+    --sidebar-accent-foreground: 0.175 0.01 60;
+    --sidebar-border: 0.88 0.025 75;
+    --sidebar-ring: 0.39 0.1 155;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+    -webkit-font-smoothing: antialiased;
+  }
+}
